@@ -28,8 +28,8 @@ precios.forEach(function(numero){
 })
 alert(`El precio total de todos los productos es $${suma1} dolares`);
 
-/*Leer 12 notas de estudiantes y determinar cuántas aprobó y cuantas reprobó,
-dado un rango 0 a 10, reprueba cuando la nota está entre 0 y 5.*/
+//Leer 12 notas de estudiantes y determinar cuántas aprobó y cuantas reprobó,
+//dado un rango 0 a 10, reprueba cuando la nota está entre 0 y 5.
 
 let numNotas = 12;
 let nombre = prompt("Nombre del estudiante");
@@ -63,5 +63,37 @@ for(let e = 0; e < cantidadNotas; e++){
 }
 
 document.write(`${estudiante1} tus notas son las siguientes:<br>  <b style=color:red>${notas1}</b>`);
+
+//Leer n cantidad números y determinar cantidad de impares, imprimir
+//cantidad de impares.
+
+let secuencia = 10;
+let numeracion = [];
+
+for(let ind = 0; ind < secuencia; ind++){
+    numeracion[ind] = [Number(prompt(`Digite el numero ${ind+1}`))]
+}
+
+const impares = numeracion.filter (x=> x%3 === 0).length;
+
+alert(`Los numeros impares son: ${impares}`);
+
+
+//Leer n cantidad de sueldos de empleados y determinar el sueldo más bajo,
+//imprimir los sueldos y el sueldo más bajo.
+
+
+let secuencia1 = 5;
+let sueldos = [];
+
+for(let inde = 0; inde < secuencia1; inde++){
+    sueldos[inde] = [Number(prompt(`Digite su sueldo`))]
+}
+
+let min = Math.min(...sueldos);
+
+document.write(`Lista de sueldos: <b>${sueldos}</b><br>
+                Sueldo mas bajo: <b style=color:red>${min}</b>`)
+
 
 
