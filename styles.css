@@ -1,0 +1,30 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    row-gap: 0px;
+
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+.grupo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 12px;
+    background-color: antiquewhite;
+}
+
+.grupo>input{
+    padding: 5px 15px;
+    border: solid 1px rgb(17, 17, 138);
+}

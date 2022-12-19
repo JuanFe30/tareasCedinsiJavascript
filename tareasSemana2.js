@@ -62,7 +62,7 @@ for(let e = 0; e < cantidadNotas; e++){
     notas1[e] = [Number(prompt(`${estudiante1} digita la ${e+1} nota`))]
 }
 
-document.write(`${estudiante1} tus notas son las siguientes:<br>  <b style=color:red>${notas1}</b>`);
+document.write(`${estudiante1} tus notas son las siguientes:  <b style=color:red>${notas1}</b><br><br>`);
 
 //Leer n cantidad números y determinar cantidad de impares, imprimir
 //cantidad de impares.
