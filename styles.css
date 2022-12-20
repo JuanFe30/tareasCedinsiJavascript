@@ -5,26 +5,111 @@
     font-family: 'Roboto', sans-serif;
     border: none;
     row-gap: 0px;
-
+    
 }
 
-.formulario{
+.fondo{
+    height: 100vh;
+}
+
+h1{
+    text-align: center;
+    padding-top: 100px;
+}
+
+.tareas{
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    padding: 50px;
    
 }
 
-.grupo{
+.tareas a{
+    padding: 15px;
+    color: darkblue;
+    text-decoration: none;
+}
+
+.tareas a:hover{
+    color: darkorange;
+}
+.error{
+    border: solid 2px red;
+    background-color: black;
+}
+
+#ubicacion{
+    height: 800px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 12px;
-    background-color: antiquewhite;
+    align-items: center;
+    background-image: url(../Images/pexels1\ \(1\).jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.52),rgba(57, 62, 63, 0.596), rgba(67, 67, 63, 0.575), rgba(0, 0, 0, 0.849)), url(../Images/pexels1\ \(1\).jpg);
+    background-position: top;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#ubicacion>div>h4{
+    margin: 30px;
+    font-size: 40px;
+    color: #E0E2E4;
 }
 
-.grupo>input{
-    padding: 5px 15px;
-    border: solid 1px rgb(17, 17, 138);
+#ubicacion>div>div>h4{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #E0E2E4;
 }
+
+#ubicacion>div>iframe{
+    margin-bottom: 80px;
+}
+
+#ubicacion>div>form{
+    padding: 30px;
+    margin-bottom: 80px;
+    border-color: #E0E2E4;
+    border-style: solid;
+    border-width: 1px;
+    color: #E0E2E4;
+    
+    
+}
+
+.contactos>div{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #E0E2E4;
+
+}
+.contactos>div>ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.contactos>div>ul>li{
+    padding: 10px;
+    list-style: none;
+    margin-top: 5px;
+}
+
+.imgcarrusel{
+    width: 700px;
+    position: relative;
+    left: 0%;
+
+   
+}
+
+#ubicacion>section{
+    margin-bottom: 50px;
+}
+
